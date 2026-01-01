@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>معرض المنتجات</title>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+:root{
+  --main:#e91e63;
+  --text:#333;
+  --muted:#777;
+  --bg:#ffffff;
+}
+*{box-sizing:border-box}
+body{
+  font-family:'Poppins',Tahoma,Arial;
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+}
+header{
+  background:#ffffff;
+  color:#111;
+  padding:70px 20px;
+  text-align:center;
+  border-bottom:1px solid #eee
+}
+header h1{
+  margin:0;
+  font-size:44px;
+  letter-spacing:3px;
+  color:var(--main)
+}
+header p{
+  margin-top:14px;
+  font-size:18px;
+  color:var(--muted)
+}
+section{
+  padding:70px 20px;
+  max-width:1200px;
+  margin:auto
+}
+h2{
+  font-size:28px;
+  margin-bottom:40px;
+  color:var(--main);
+  text-align:center
+}
+.products{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:35px
+}
+.card{
+  background:#fff;
+  border-radius:22px;
+  box-shadow:0 12px 30px rgba(0,0,0,.08);
+  padding:20px;
+  text-align:center;
+  transition:.35s ease
+}
+.card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 20px 40px rgba(0,0,0,.12)
+}
+.card img{
+  width:180px;
+  height:180px;
+  border-radius:50%;
+  object-fit:cover;
+  margin-top:10px
+}
+.card h3{
+  margin:20px 0 10px;
+  font-size:20px
+}
+.card p{
+  font-size:14px;
+  color:var(--muted)
+}
+.price{
+  font-weight:600;
+  margin:14px 0;
+  color:var(--main)
+}
+.btn{
+  display:inline-block;
+  margin-top:14px;
+  padding:12px 30px;
+  background:#25D366;
+  color:#fff;
+  text-decoration:none;
+  border-radius:35px;
+  font-size:15px
+}
+.about,.contact{
+  background:#fff;
+  border-radius:26px;
+  box-shadow:0 12px 30px rgba(0,0,0,.08);
+  padding:45px;
+  margin-top:60px
+}
+.about p,.contact p{
+  font-size:16px;
+  line-height:2;
+  text-align:center;
+  color:#555
+}
+footer{
+  text-align:center;
+  padding:30px;
+  background:#111;
+  color:#fff;
+  margin-top:70px
+}
+.whatsapp-float{
+  position:fixed;
+  bottom:25px;
+  right:25px;
+  background:#25D366;
+  color:#fff;
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:28px;
+  text-decoration:none;
+  box-shadow:0 10px 25px rgba(0,0,0,.25);
+  z-index:999
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>رين</h1>
+  <p>مواد تجميل نسائية مختارة بعناية لإبراز جمالك</p>
+</header>
+
+<section>
+  <h2>الأكثر طلبًا ⭐</h2>
+  <div class="products">
+    <div class="card">
+      <img src="https://via.placeholder.com/400x300" alt="منتج مميز">
+      <h3>منتج مميز</h3>
+      <p>من أكثر منتجات رين طلبًا من الزبونات.</p>
+      <div class="price">حسب الطلب</div>
+      <a class="btn" href="https://wa.me/212672058905">اطلبي عبر واتساب</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>منتوجاتنا</h2>
+  <div class="products">
+    <div class="card">
+      <img src="https://via.placeholder.com/400x300" alt="منتج 1">
+      <h3>اسم المنتج</h3>
+      <p>وصف مختصر وجذاب للمنتج.</p>
+      <div class="price">حسب الطلب</div>
+      <a class="btn" href="https://wa.me/212672058905">اطلب عبر واتساب</a>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/400x300" alt="منتج 2">
+      <h3>اسم المنتج</h3>
+      <p>وصف مختصر وجذاب للمنتج.</p>
+      <div class="price">حسب الطلب</div>
+      <a class="btn" href="https://wa.me/212672058905">اطلب عبر واتساب</a>
+    </div>
+  </div>
+</section>
+
+<section class="about">
+  <h2>من نحن</h2>
+  <p>
+    مشروع رين متخصص في مواد التجميل النسائية، نحرص على اختيار منتجات ذات جودة عالية وبأسعار مناسبة، مع اهتمام كبير برضا الزبونات والثقة المتبادلة.
+  </p>
+</section>
+
+<section class="contact">
+  <h2>تواصل معنا</h2>
+  <p>📞 الهاتف / واتساب: 0672058905</p>
+  <p>📍 المغرب</p>
+</section>
+
+<footer>
+  <p>© 2026 جميع الحقوق محفوظة</p>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/212672058905">💬</a>
+
+</body>
+</html>
